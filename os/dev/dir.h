@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016, Vishwesh Rege
+ * Copyright (c) 2019, Tim van der Lee
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -54,6 +54,8 @@ void dir_init(void);
 
 int bw_get(void);
 void bw_set(int beamwidthDegrees);
+int antenna_type_get(void);
+void antenna_type_set(int type);
 int ori_get(void);
 void ori_set(int orientationDegrees);
 
@@ -61,6 +63,8 @@ void dir_arch_init(void);
 int bw_arch_get(void);
 void bw_arch_set(int beamwidthDegrees);
 int ori_arch_get(void);
+void antenna_type_arch_set(int type); //type == 0 => omni
+int antenna_type_arch_get(void);
 void ori_arch_set(int orientationDegrees);
 
 void set_xcoordinate(int xcoordinate);
@@ -68,7 +72,7 @@ int get_xcoordinate(void);
 void set_ycoordinate(int ycoordinate);
 int get_ycoordinate(void);
 
- 
+
 int get_xpos(void);
 void set_xpos(int xcoordinate);
 int get_ypos(void);

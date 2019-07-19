@@ -10,7 +10,7 @@ This repository is the latest contiki-ng implementing the RDAS presented in the 
 - os/dev/dir.c
 - os/dev/dir.h
 
-An example using tsch is available. By default, directional antennas are enabled.
+An example using tsch is available. By default, directional antennas are enabled. Note that modifying type and orientation by clicking on the node wont work (overwritten by node).
 
 # RDAS
 

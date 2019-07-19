@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016, Vishwesh Rege
+ * Copyright (c) 2019, Tim van der Lee
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -32,10 +32,7 @@
 
 #include "dev/dir.h"
 #include "sys/clock.h"
-//#include "sys/energest.h"
 
-//static int ori;
-//static int bw;
 /*---------------------------------------------------------------------------*/
 void
 dir_init(void)
@@ -52,6 +49,17 @@ void
 bw_set(int bw)
 {
   bw_arch_set(bw);
+}
+/*---------------------------------------------------------------------------*/
+int
+antenna_type_get(void) {
+  return antenna_type_arch_get();
+}
+/*---------------------------------------------------------------------------*/
+void
+antenna_type_set(int type)
+{
+  antenna_type_arch_set(type);
 }
 /*---------------------------------------------------------------------------*/
 int
@@ -87,4 +95,3 @@ set_ycoordinate(int ycordi)
   set_ypos(ycordi);
 }
 /*---------------------------------------------------------------------------*/
-
