@@ -1,4 +1,25 @@
-<img src="https://github.com/contiki-ng/contiki-ng.github.io/blob/master/images/logo/Contiki_logo_2RGB.png" alt="Logo" width="256">
+# Contiki-ng-directional-antenna
+This repository is the latest contiki-ng implementing the RDAS presented in the next section. Changelog:
+- modified:   README.md
+- modified:   arch/platform/cooja/Makefile.cooja
+- modified:   arch/platform/cooja/platform.c
+- added:
+- tools/cooja
+- arch/platform/cooja/dev/dir-arch.c
+- examples/6tisch/simple-node/node_directional.c
+- os/dev/dir.c
+- os/dev/dir.h
+
+An example using tsch is available. By default, directional antennas are enabled.
+
+# RDAS
+
+Original Repo: https://github.com/ShamanthNagaraju/RDAS
+
+Original Paper: https://doi.org/10.1109/NCC.2017.8077141
+
+Inspired by: https://github.com/vrege/contiki-ant
+
 
 # Contiki-NG: The OS for Next Generation IoT Devices
 
