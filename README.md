@@ -4,13 +4,13 @@ This repository is the latest contiki-ng implementing the RDAS presented in the 
 - modified:   arch/platform/cooja/Makefile.cooja
 - modified:   arch/platform/cooja/platform.c
 - added:
-- tools/cooja
+- tools/cooja_directional
 - arch/platform/cooja/dev/dir-arch.c
 - examples/6tisch/simple-node/node_directional.c
 - os/dev/dir.c
 - os/dev/dir.h
 
-An example using tsch is available. By default, directional antennas are enabled. Note that modifying type and orientation by clicking on the node wont work (overwritten by node).
+An example using tsch is available. By default, directional antennas are enabled, and parameters are overwritten by device (see dev/dir.c and dir-arch.c).
 
 # RDAS
 
