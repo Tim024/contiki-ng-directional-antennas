@@ -36,7 +36,7 @@ const struct simInterface dir_interface;
 // COOJA variables
 int simBwDegValue = 90;
 int simOriDegValue = 0;
-int antennaType = 0;
+int antennaType = 1;
 int xcor = 10;
 int ycor = 0;
 int gvar = 0;
