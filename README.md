@@ -4,7 +4,7 @@ This repository is the latest contiki-ng implementing the RDAS presented in the 
 - modified:   arch/platform/cooja/Makefile.cooja
 - modified:   arch/platform/cooja/platform.c
 - added:
-- tools/cooja
+- tools/cooja_directional
 - arch/platform/cooja/dev/dir-arch.c
 - examples/6tisch/simple-node/node_directional.c
 - os/dev/dir.c
