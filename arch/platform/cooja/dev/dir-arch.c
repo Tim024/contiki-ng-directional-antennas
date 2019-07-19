@@ -36,6 +36,7 @@ const struct simInterface dir_interface;
 // COOJA variables
 int simBwDegValue = 90;
 int simOriDegValue = 0;
+int antennaType = 0;
 int xcor = 10;
 int ycor = 0;
 int gvar = 0;
@@ -44,6 +45,7 @@ int gvar = 0;
 void dir_arch_init() {
   simBwDegValue = 60;
   simOriDegValue = 1;
+  antennaType = 1;
   xcor = 0;
   ycor = 0;
   gvar = 0;
@@ -53,8 +55,16 @@ int bw_arch_get() {
   return simBwDegValue;
 }
 /*-----------------------------------------------------------------------------------*/
+int antenna_type_arch_get() {
+  return antennaType;
+}
+/*-----------------------------------------------------------------------------------*/
 int ori_arch_get() {
   return simOriDegValue;
+}
+/*-----------------------------------------------------------------------------------*/
+void antenna_type_arch_set(int at) {
+    antennaType = at;
 }
 /*-----------------------------------------------------------------------------------*/
 void bw_arch_set(int bw) {
