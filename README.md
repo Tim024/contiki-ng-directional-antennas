@@ -11,6 +11,7 @@ This repository is the latest contiki-ng implementing the RDAS presented in the 
 - os/dev/dir.h
 
 An example using tsch is available. By default, directional antennas are enabled, and parameters are overwritten by device (see dev/dir.c and dir-arch.c).
+Default Cooja config has to be changed to include Direction interface tools/cooja/config/cooja_default.xml
 
 # RDAS
 
