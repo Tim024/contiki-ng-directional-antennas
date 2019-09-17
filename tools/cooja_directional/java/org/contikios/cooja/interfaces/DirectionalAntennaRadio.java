@@ -42,7 +42,7 @@ public interface DirectionalAntennaRadio {
    *
    * @see #getRelativeGain(double)
    */
-  public double getDirection();
+  public double getAntennaDirection();
 
   /**
    * Relative gain (dB) as compared to an omnidirectional antenna.

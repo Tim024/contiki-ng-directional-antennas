@@ -83,9 +83,12 @@ public class MoteInterfaceHandler {
    * @param interfaceClasses Mote interface classes
    */
   public MoteInterfaceHandler(Mote mote, Class<? extends MoteInterface>[] interfaceClasses) {
+  
+    
+    
+    //if interface is not loaded see config.xml
     for (Class<? extends MoteInterface> interfaceClass : interfaceClasses) {
       MoteInterface intf = MoteInterface.generateInterface(interfaceClass, mote);
-
       if (intf != null) {
         addInterface(intf);
       } else {

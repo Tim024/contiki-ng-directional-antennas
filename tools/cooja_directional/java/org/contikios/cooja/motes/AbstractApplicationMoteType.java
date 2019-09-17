@@ -53,6 +53,7 @@ import org.contikios.cooja.interfaces.Mote2MoteRelations;
 import org.contikios.cooja.interfaces.MoteAttributes;
 import org.contikios.cooja.interfaces.MoteID;
 import org.contikios.cooja.interfaces.Position;
+import org.contikios.cooja.interfaces.Direction;
 
 @ClassDescription("Application Mote Type")
 public abstract class AbstractApplicationMoteType implements MoteType {
@@ -67,6 +68,7 @@ public abstract class AbstractApplicationMoteType implements MoteType {
   private final Class<? extends MoteInterface>[] moteInterfaceClasses = new Class[] {
       SimpleMoteID.class,
       Position.class,
+      Direction.class,
       ApplicationSerialPort.class,
       ApplicationRadio.class,
       ApplicationLED.class,

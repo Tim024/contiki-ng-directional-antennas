@@ -1949,7 +1949,7 @@ public class ChannelModel {
         return 0;
       }
       DirectionalAntennaRadio r = (DirectionalAntennaRadio)getFromRadio();
-      double txGain = r.getRelativeGain(r.getDirection() + getAngle(), getAngle());
+      double txGain = r.getRelativeGain(r.getAntennaDirection() + getAngle(), getAngle());
       //logger.debug("tx gain: " + txGain + " (angle " + String.format("%1.1f", Math.toDegrees(r.getDirection() + getAngle())) + ")");
       return txGain;
     }
@@ -1958,7 +1958,7 @@ public class ChannelModel {
         return 0;
       }
       DirectionalAntennaRadio r = (DirectionalAntennaRadio)getFromRadio();
-      double txGain = r.getRelativeGain(r.getDirection() + getAngle() + Math.PI, getDistance());
+      double txGain = r.getRelativeGain(r.getAntennaDirection() + getAngle() + Math.PI, getDistance());
       //logger.debug("rx gain: " + txGain + " (angle " + String.format("%1.1f", Math.toDegrees(r.getDirection() + getAngle() + Math.PI)) + ")");
       return txGain;
     }

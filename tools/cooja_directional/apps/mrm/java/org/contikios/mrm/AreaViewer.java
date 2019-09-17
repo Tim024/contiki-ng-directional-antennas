@@ -742,7 +742,7 @@ public class AreaViewer extends VisPlugin {
               return 0;
             }
             DirectionalAntennaRadio r = (DirectionalAntennaRadio)selectedRadio;
-            double txGain = r.getRelativeGain(r.getDirection() + getAngle(), getDistance());
+            double txGain = r.getRelativeGain(r.getAntennaDirection() + getAngle(), getDistance());
             //logger.debug("tx gain: " + txGain + " (angle " + String.format("%1.1f", Math.toDegrees(r.getDirection() + getAngle())) + ")");
             return txGain;
           }
@@ -1812,7 +1812,7 @@ public class AreaViewer extends VisPlugin {
                         return 0;
                       }
                       DirectionalAntennaRadio r = (DirectionalAntennaRadio)selectedRadio;
-                      double txGain = r.getRelativeGain(r.getDirection() + getAngle(), getDistance());
+                      double txGain = r.getRelativeGain(r.getAntennaDirection() + getAngle(), getDistance());
                       //logger.debug("tx gain: " + txGain + " (angle " + String.format("%1.1f", Math.toDegrees(r.getDirection() + getAngle())) + ")");
                       return txGain;
                     }

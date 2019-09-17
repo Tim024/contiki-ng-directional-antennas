@@ -181,7 +181,7 @@ public class Direction extends MoteInterface implements PolledAfterActiveTicks {
 	}
 	//System.out.println("val:"+val);
 	double gain=map.get(val);
-    	//System.out.println("The Value mapped to deg:"+val+"is:"+ gain);
+    System.out.println("The Value mapped to deg:"+val+"is:"+ gain+" omni "+omni);
 	
 	if (omni) {
 		return 1.0;
